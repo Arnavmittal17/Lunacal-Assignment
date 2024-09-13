@@ -1,0 +1,64 @@
+.container {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    max-width: 32rem;
+    margin: 0 auto;
+    background-color: #363c43;
+    position: relative; 
+  }
+  
+  .iconContainer {
+    position: absolute;
+    left: -50px; 
+    top: 5%;
+    transform: translateY(-50%);
+  }
+  
+  .tabsContainer {
+    display: flex;
+    justify-content: space-between;
+    background-color: #171717;
+    padding: 0.5rem;
+    border-radius: 23px;
+    position: relative;
+    gap: 10px;
+  }
+  
+  .tabButton {
+    position: relative;
+    padding: 0.5rem 1.5rem; /* Widen the button */
+    font-size: 1.1rem; /* Increase font size */
+    font-weight: 400;
+    cursor: pointer;
+    border-radius: 16px;
+    display: flex;
+    align-items: center;
+    transition: background-color 0.3s ease;
+  }
+  
+  .tabText {
+    color: #a0aec0; /* Default color */
+  }
+  
+  .tabButton.selected .tabText {
+    color: #fff; /* Selected color */
+  }
+  
+  .selectedTab {
+    position: absolute;
+    top: -3px;
+    bottom: -3px;
+    left: 0;
+    right: 0;
+    background-color: #292828;
+    border-radius: 16px;
+    box-shadow: 0px 16px 10px rgba(0, 0, 0, 0.6);
+  }
+  
+  .content {
+    margin-top: 1rem;
+    background-color: #363c43;
+    color: #a3adb2;
+  }
+  
